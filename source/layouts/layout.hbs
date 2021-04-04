@@ -50,24 +50,18 @@
     <script src="/content/javascripts/site{{meta.config.fileEnv}}.js"></script>
   </head>
   <body>
-    <header class="d-flex flex-column flex-md-row align-items-center p-3 px-md-4 bg-white border-bottom">
-        <div class="h4 my-0 me-md-auto brand">
-          <a class="navbar-brand" href="/">
-              <img src="/content/images/squido.svg" alt="" width="70" height="70" class="d-inline-block align-text-top">squido
-          </a>
-        </div>
-        <nav class="my-2 my-md-0 me-md-3">
-            <a class="p-2 text-dark" href="/">Home</a>
-            <a class="p-2 text-dark" target="_blank" href="https://github.com/mrvautin/squido">Github</a>
-        </nav>
+    <header class="d-flex flex-wrap justify-content-center py-3 border-bottom">
+      <a href="/" class="d-flex align-items-center mb-3 mb-md-0 me-md-auto text-dark text-decoration-none">
+        <img src="/content/images/squido.svg" alt="" width="60" height="60" class="d-inline-block align-text-top">
+        <span class="fs-4 brand">squido docs</span>
+      </a>
+      <ul class="nav nav-pills p-1">
+        <li class="nav-item p-2"><a href="/" class="nav-link btn-outline-secondary">Home</a></li>
+        <li class="nav-item p-2"><a target="_blank" href="https://github.com/mrvautin/squido" class="nav-link btn-outline-secondary">Github</a></li>
+      </ul>
     </header>
     <main class="container-fluid">
       {{{body}}}
     </main>
-    <footer class="footer mt-5 py-3 bg-light">
-        <div class="container text-center">
-            <span class="text-muted">squido</span>
-        </div>
-    </footer>
   </body>
 </html>

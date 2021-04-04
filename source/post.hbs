@@ -1,17 +1,15 @@
 <div class="row">
-  <nav id="sidebarMenu" class="col-md-3 col-lg-2 d-md-block bg-light sidebar collapse">
-    <div class="position-sticky pt-3">
-      <ul class="nav flex-column">
-        {{#each postList}}
-        <li class="nav-item">
-          <a class="nav-link" href="/{{this.permalink}}">
-            {{this.title}}
-          </a>
-        </li>
-        {{/each}}
-      </ul>
-    </div>
-  </nav>
+  <div class="sidebar d-flex flex-column p-3 text-white bg-light col-md-2">
+    <ul class="nav nav-pills flex-column mb-auto">
+      {{#each postList}}
+      <li class="nav-item">
+        <a class="nav-link" href="/{{this.permalink}}">
+          {{this.title}}
+        </a>
+      </li>
+      {{/each}}
+    </ul>
+  </div>
 
   <main class="col-md-9 ms-sm-auto col-lg-10 mt-3 px-md-4">
     <h1>{{title}}</h1>
