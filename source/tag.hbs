@@ -1,20 +1,23 @@
 <div class="row">
-  <h1>Tag: {{tag}}</h1>
-  {{#each posts}}
-  <div class="col-xs-12 col-sm-3 mb-4 d-flex align-items-stretch">
-    <div class="card shadow-sm">
-      <div class="card-body">
-        <p class="card-text">
-          <h2>
-            <a href="/{{this.permalink}}">{{this.title}}</a> 
-          </h2>
-          {{this.summary}}
-        </p>
-        <div class="d-flex justify-content-between align-items-center">
-          <a class="btn btn-outline-secondary" href="/{{this.permalink}}">Read more..</a>
-        </div>
-      </div>
-    </div>
+  <div class="sidebar d-flex flex-column p-3 text-white bg-light col-md-2">
+    <ul class="nav nav-pills flex-column mb-auto">
+      {{#each postList}}
+      <li class="nav-item">
+        <a class="nav-link" href="/{{this.permalink}}">
+          {{this.title}}
+        </a>
+      </li>
+      {{/each}}
+    </ul>
   </div>
-  {{/each}}
+  <main class="col-md-9 ms-sm-auto col-lg-10 mt-3 px-md-4">
+    <h1>Tag: {{tag}}</h1>
+    {{#each posts}}
+    <div class="col-xs-12 col-sm-12 mb-4 d-flex align-items-stretch">
+      <h3>
+        <a href="/{{this.permalink}}">{{this.title}}</a> 
+      </h3>
+    </div>
+    {{/each}}
+  </main>
 </div>
