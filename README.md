@@ -1,3 +1,3 @@
-This is the demo repository for [squido](https://github.com/mrvautin/squido) static website generator: https://github.com/mrvautin/squido
+This is the documentation repository for [squido](https://github.com/mrvautin/squido) static website generator: https://github.com/mrvautin/squido
 
-This static website is hosted here: [https://squido.netlify.app/](https://squido.netlify.app/)
+This static website is hosted here: [squido-docs.netlify.app/](squido-docs.netlify.app/)

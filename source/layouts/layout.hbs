@@ -1,7 +1,7 @@
 <!doctype html>
 <html lang="en">
   <head>
-    <meta charset="utf-8">
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
     {{#if meta.title}}
     <title>{{meta.title}}</title>
@@ -46,6 +46,7 @@
     <link rel="alternate" type="application/json" href="{{meta.config.baseUrl}}/json" />
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/5.0.0-beta2/css/bootstrap.min.css" integrity="sha512-aqT9YD5gLuLBr6ipQAS+72o5yHKzgZbGxEh6iY8lW/r6gG14e2kBTAJb8XrxzZrMOgSmDqtLaF76T0Z6YY2IHg==" crossorigin="anonymous" />
     <link rel="stylesheet" href="/content/stylesheets/style{{meta.config.fileEnv}}.css">
+    <link rel="stylesheet" href="/content/stylesheets/syntax{{meta.config.fileEnv}}.css">
     <script src="/content/javascripts/site{{meta.config.fileEnv}}.js"></script>
   </head>
   <body>
@@ -57,7 +58,7 @@
         </div>
         <nav class="my-2 my-md-0 me-md-3">
             <a class="p-2 text-dark" href="/">Home</a>
-            <a class="p-2 text-dark" href="/about">About</a>
+            <a class="p-2 text-dark" target="_blank" href="https://github.com/mrvautin/squido">Github</a>
         </nav>
     </header>
     <main class="container-fluid">
