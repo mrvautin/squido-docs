@@ -37,4 +37,5 @@ h1, h2{
 
 .sidebar{
     border-right: 1px solid #dee2e6;
+    min-height: 100vh;
 }
