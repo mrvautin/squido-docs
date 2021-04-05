@@ -10,7 +10,7 @@ const config = {
         buildDir: 'build',
         summaryLength: 250,
         port: 4965,
-        pagination: true,
+        pagination: false,
         postPerPage: 8
     },
     production: {
@@ -24,7 +24,7 @@ const config = {
         buildDir: 'build',
         summaryLength: 250,
         port: 4965,
-        pagination: true,
+        pagination: false,
         postPerPage: 8
     }
 };

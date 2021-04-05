@@ -44,20 +44,28 @@
     <link rel="alternate" type="application/rss+xml" href="{{meta.config.baseUrl}}/rss" />
     <link rel="alternate" type="application/atom+xml" href="{{meta.config.baseUrl}}/atom" />
     <link rel="alternate" type="application/json" href="{{meta.config.baseUrl}}/json" />
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/5.0.0-beta2/css/bootstrap.min.css" integrity="sha512-aqT9YD5gLuLBr6ipQAS+72o5yHKzgZbGxEh6iY8lW/r6gG14e2kBTAJb8XrxzZrMOgSmDqtLaF76T0Z6YY2IHg==" crossorigin="anonymous" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/5.0.0-beta3/css/bootstrap.min.css" integrity="sha512-N415hCJJdJx+1UBfULt+i+ihvOn42V/kOjOpp1UTh4CZ70Hx5bDlKryWaqEKfY/8EYOu/C2MuyaluJryK1Lb5Q==" crossorigin="anonymous" />
     <link rel="stylesheet" href="/content/stylesheets/style{{meta.config.fileEnv}}.css">
     <link rel="stylesheet" href="/content/stylesheets/syntax{{meta.config.fileEnv}}.css">
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/5.0.0-beta3/js/bootstrap.min.js" integrity="sha512-mp3VeMpuFKbgxm/XMUU4QQUcJX4AZfV5esgX72JQr7H7zWusV6lLP1S78wZnX2z9dwvywil1VHkHZAqfGOW7Nw==" crossorigin="anonymous"></script>
     <script src="/content/javascripts/site{{meta.config.fileEnv}}.js"></script>
   </head>
   <body>
-    <header class="d-flex flex-wrap justify-content-center py-3 border-bottom">
-      <a href="/" class="d-flex align-items-center mb-3 mb-md-0 me-md-auto text-dark text-decoration-none">
+    <header class="navbar navbar-light bg-light flex-md-nowrap p-0 border-bottom">
+      <a href="/" class="navbar-brand d-flex align-items-center mb-2 mb-md-0 me-md-auto text-dark text-decoration-none">
         <img src="/content/images/squido.svg" alt="" width="60" height="60" class="d-inline-block align-text-top">
         <span class="fs-4 brand">squido docs</span>
       </a>
       <ul class="nav nav-pills p-1">
-        <li class="nav-item p-2"><a href="/" class="nav-link btn-outline-secondary">Home</a></li>
-        <li class="nav-item p-2"><a target="_blank" href="https://github.com/mrvautin/squido" class="nav-link btn-outline-secondary">Github</a></li>
+        <li class="nav-item p-2">
+          <a href="#" class="nav-link btn-outline-secondary d-block d-sm-none" data-bs-toggle="collapse" data-bs-target="#sidebarMenu">
+            <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" fill="currentColor" class="bi bi-list mb-1" viewBox="0 0 16 16">
+              <path fill-rule="evenodd" d="M2.5 12a.5.5 0 0 1 .5-.5h10a.5.5 0 0 1 0 1H3a.5.5 0 0 1-.5-.5zm0-4a.5.5 0 0 1 .5-.5h10a.5.5 0 0 1 0 1H3a.5.5 0 0 1-.5-.5zm0-4a.5.5 0 0 1 .5-.5h10a.5.5 0 0 1 0 1H3a.5.5 0 0 1-.5-.5z"/>
+            </svg>
+          </a>
+        </li>
+        <li class="nav-item p-2 d-none d-sm-block"><a href="/" class="nav-link btn-outline-secondary">Home</a></li>
+        <li class="nav-item p-2 d-none d-sm-block"><a target="_blank" href="https://github.com/mrvautin/squido" class="nav-link btn-outline-secondary">Github</a></li>
       </ul>
     </header>
     <main class="container-fluid">
