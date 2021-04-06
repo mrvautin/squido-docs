@@ -1,7 +1,7 @@
 const config = {
     development: {
         name: 'squido docs',
-        description: 'TSquido documentation',
+        description: 'Squido documentation',
         twitterHandle: '@mrvautin',
         baseUrl: 'http://localhost:4965',
         sourcesExt: 'markdown',
