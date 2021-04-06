@@ -43,6 +43,6 @@ const config = {
 module.exports = config;
 ```
 
-The configuration options are self explanatory. You can use any of the config in your template files using `{{meta.config.<option>}}`. Eg: For example `{{meta.config.baseUrl}}`.
+The configuration options are self explanatory. You can use any of the config in your template files using `{{config.<option>}}`. Eg: For example `{{config.baseUrl}}`.
 
 This is a static website so the `port` is used for spinning up a Web Server for development. 
