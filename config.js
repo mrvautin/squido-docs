@@ -17,7 +17,7 @@ const config = {
         name: 'squido docs',
         description: 'Squido documentation - A dead simple static website generator',
         twitterHandle: '@mrvautin',
-        baseUrl: 'https://squido-docs.netlify.app',
+        baseUrl: 'https://docs.squido.org',
         sourcesExt: 'markdown',
         layout: 'layout.hbs',
         sourceDir: 'source',
