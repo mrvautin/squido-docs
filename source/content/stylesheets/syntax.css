@@ -18,6 +18,10 @@ pre {
     border: 1px solid #dee2e6;
 }
 
+code {
+    color: #e65670;
+}
+
 .hljs-builtin-name, .hljs-doctag, .hljs-keyword, .hljs-meta-keyword, .hljs-template-tag, .hljs-template-variable, .hljs-type {
     /* prettylights-syntax-keyword */
     color: #d73a49;

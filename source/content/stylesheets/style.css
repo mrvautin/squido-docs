@@ -1,11 +1,15 @@
 a{
     color: #F95A77 !important;
-    text-decoration: none !important;
+    text-decoration: underline !important;
 }
 
 a:hover{
     color: #FF96A9 !important;
     text-decoration: underline !important;
+}
+
+.nav-item a {
+    text-decoration: none !important;
 }
 
 .btn-secondary {
