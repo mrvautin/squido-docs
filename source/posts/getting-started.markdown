@@ -42,6 +42,8 @@ cd my-squido-website
 
 ## Demo
 
-Blog style: [https://squido.netlify.app](https://squido.netlify.app)
+Blog style: [https://docs.squido.org](https://docs.squido.org)
 
 Documentation style: This website
+
+Traditional website: [https://squido.org](https://squido.org)
