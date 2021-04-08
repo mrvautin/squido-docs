@@ -1,6 +1,6 @@
 ---
 title: Templates
-permalink: template
+permalink: templates
 description: Getting started with the squido templating
 date: '2021-04-02 01:54:00'
 tags: 
