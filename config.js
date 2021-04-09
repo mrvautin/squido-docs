@@ -31,7 +31,13 @@ const config = {
         summaryLength: 250,
         port: 4965,
         pagination: false,
-        postPerPage: 8
+        postPerPage: 8,
+        plugins: [
+            {
+                name: 'search',
+                options: {}
+            }
+        ]
     }
 };
 
