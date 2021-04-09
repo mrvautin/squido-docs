@@ -28,6 +28,31 @@ a:hover{
     border-color: #FF96A9 !important;
 }
 
+.non-link {
+    color: #264653 !important;
+}
+
+.non-link:hover {
+    color: #F95A77 !important;
+}
+
+.text-squido {
+    color: #FF96A9 !important;
+}
+
+.text-squido-highlight {
+    color: #ffffff !important;
+    background-color: #FF96A9 !important;
+}
+
+.search-result-item:hover{
+    background-color: #f8f9fa !important;
+}
+
+.result-title{
+    color: #264653 !important;
+}
+
 h1, h2{
     color: #264653 !important;
     font-weight: 700; 
