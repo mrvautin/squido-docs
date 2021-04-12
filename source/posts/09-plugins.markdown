@@ -2,7 +2,7 @@
 title: Plugins
 permalink: plugins
 description: Getting started with the squido plugins
-date: '2021-04-02 01:53:00'
+date: '2021-03-02 01:53:00'
 tags: 
   - plugins
 ---

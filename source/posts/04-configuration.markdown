@@ -2,7 +2,7 @@
 title: Configuration
 permalink: configuration
 description: Getting started with the squido configuration
-date: '2021-04-02 01:56:00'
+date: '2021-03-07 01:56:00'
 tags: 
   - config
   - configuration

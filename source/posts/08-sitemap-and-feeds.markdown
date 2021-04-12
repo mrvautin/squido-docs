@@ -2,7 +2,7 @@
 title: Sitemap and Feeds
 permalink: sitemap-and-feeds
 description: Getting started with the squido sitemap and feeds
-date: '2021-04-02 01:54:00'
+date: '2021-03-03 01:55:00'
 tags: 
   - sitemap
   - rss

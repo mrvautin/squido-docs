@@ -2,7 +2,7 @@
 title: Templates
 permalink: templates
 description: Getting started with the squido templating
-date: '2021-04-02 01:54:00'
+date: '2021-03-04 01:55:00'
 tags: 
   - templates
   - themes

@@ -2,7 +2,7 @@
 title: Structure
 permalink: structure
 description: Getting started with the squido structure
-date: '2021-04-02 01:58:00'
+date: '2021-03-09 01:58:00'
 tags: 
   - structure
 ---

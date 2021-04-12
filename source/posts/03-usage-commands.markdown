@@ -2,7 +2,7 @@
 title: Usage / Commands
 permalink: usage-commands
 description: Getting started with the squido commands
-date: '2021-04-02 01:57:00'
+date: '2021-03-08 01:57:00'
 tags: 
   - usage
   - commands

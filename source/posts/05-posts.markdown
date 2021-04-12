@@ -2,7 +2,7 @@
 title: Posts
 permalink: posts
 description: Getting started with the squido post structure
-date: '2021-04-02 01:55:00'
+date: '2021-03-06 01:55:00'
 tags: 
   - posts
 ---
@@ -42,5 +42,7 @@ The `ignore` and `hidden` are optional tags for controlling the visibility of po
 The default template file name for posts is `post.hbs` but this can be overwritten per post by adding a `template` meta value to your post. Eg:
 
 ``` yaml
+---
 template: template-name.hbs
+---
 ```

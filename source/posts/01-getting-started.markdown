@@ -2,7 +2,7 @@
 title: Getting started
 permalink: getting-started
 description: Getting started with squido
-date: '2021-04-02 01:59:00'
+date: '2021-03-10 01:59:00'
 tags: 
   - installation
   - getting-started
