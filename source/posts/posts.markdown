@@ -17,6 +17,7 @@ title: Caede virides oculos armentis
 permalink: caede-virides-oculos-armentis
 description: Caede virides oculos armentis
 date: '2021-03-11 19:17:00'
+template: post.hbs
 ignore: true
 hidden: false
 tags: 
@@ -35,3 +36,11 @@ The `ignore` and `hidden` are optional tags for controlling the visibility of po
 
 - `ignore`: If set to `true`, the post will not be in the pagination and won't show on the index page.
 - `hidden`: If set to `true`, the post will not be in the sitemap and RSS feeds.
+
+### Template file
+
+The default template file name for posts is `post.hbs` but this can be overwritten per post by adding a `template` meta value to your post. Eg:
+
+``` yaml
+template: template-name.hbs
+```
