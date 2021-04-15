@@ -21,31 +21,31 @@ The idea is to be a `no code` setup and have everything you need to run and host
 Simply install the `squido` cli module globally in order to build and manage your static site.
 
 With npm
-<pre>
+``` plaintext
 npm install -g squido
-</pre>
+```
 
 Or with Yarn
-<pre>
+``` plaintext
 yarn global add squido
-</pre>
+```
 
 npm from Github
-<pre>
+``` plaintext
 npm i -g https://github.com/mrvautin/squido
-</pre>
+```
 
 ### Start from scratch
 
 Make your `squido` website directory:
-<pre>
+``` plaintext
 mkdir my-squido-website
-</pre>
+```
 
 Enter your new `squido` website directory:
-<pre>
+``` plaintext
 cd my-squido-website
-</pre>
+```
 
 Get started building your `squido` website [structure](https://docs.squido.org/structure/).
 
@@ -53,26 +53,26 @@ Get started building your `squido` website [structure](https://docs.squido.org/s
 
 The example we will use below is our [blog](https://github.com/mrvautin/squido-blog) example. There is also a [documentation](https://github.com/mrvautin/squido-docs) website example you can use. 
 
-<pre>
+``` plaintext
 git clone https://github.com/mrvautin/squido-blog my-squido-website
-</pre>
+```
 
 > Replace `my-squido-website` with your new website directory name
 
 Enter your new `squido` website directory:
-<pre>
+``` plaintext
 cd my-squido-website
-</pre>
+```
 
 Run the following command to build, clean, serve and watch for changes:
-<pre>
+``` plaintext
 squido serve -b -w -c
-</pre>
+```
 
 You can then visit your website here:
-<pre>
+``` plaintext
 http://localhost:4965
-</pre>
+```
 
 > `Clean` = removes everything in your `/build` directory.
 
