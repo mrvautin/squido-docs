@@ -57,7 +57,8 @@ The example we will use below is our [blog](https://github.com/mrvautin/squido-b
 git clone https://github.com/mrvautin/squido-blog my-squido-website
 ```
 
-> Replace `my-squido-website` with your new website directory name
+Replace `my-squido-website` with your new website directory name
+{.fst-italic}
 
 Enter your new `squido` website directory:
 ``` plaintext
@@ -77,6 +78,70 @@ http://localhost:4965
 > `Clean` = removes everything in your `/build` directory.
 
 > `Serve` = starts a web server so you can view your website.
+
+### Create Git repository
+
+1. Create repository:
+
+![Create repository](/content/images/github/create-repository-create.png)
+
+2. Set the repository name:
+
+![Set repository name](/content/images/github/create-repository-name.png)
+
+3. Set public/private:
+
+![Set repository name](/content/images/github/create-repository-public-private.png)
+
+4. Finish creating the repository:
+
+![Set repository name](/content/images/github/create-repository-button.png)
+
+5. Add your new repository to your git remotes:
+
+``` bash
+$ git remote add origin https://github.com/user/repo.git
+```
+
+6. Check remote is correctly added:
+
+``` bash
+$ git remote -v
+# Verify new remote
+> origin  https://github.com/user/repo.git (fetch)
+> origin  https://github.com/user/repo.git (push)
+```
+
+7. Create your first post: `/source/posts/hello-world.markdown`
+
+``` yaml
+---
+title: Hello World
+permalink: hello-world
+description: Hello World
+date: '2021-03-10 01:59:00'
+---
+```
+
+8. Add your new files to first commit:
+
+``` bash
+git add .
+```
+
+9. Commit your files/changes:
+
+``` bash
+git commit -m "First commit"
+```
+
+10. Push your changes to your repository:
+
+``` bash
+git push
+```
+
+Setup the [deploy/hosting](https://docs.squido.org/deployment-and-hosting/).
 
 ## Demos
 
