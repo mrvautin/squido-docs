@@ -6,6 +6,6 @@
     "build": "squido build -c"
   },
   "dependencies": {
-    "squido": "latest"
+    "squido": "git@github.com:mrvautin/squido.git"
   }
 }
