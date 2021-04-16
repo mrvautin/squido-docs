@@ -2,7 +2,7 @@
 title: Deployment and hosting
 permalink: deployment-and-hosting
 description: Getting started with the squido deploying and hosting your website
-date: '2021-03-01 01:52:00'
+date: '2021-02-28 01:52:00'
 tags: 
   - deployment
   - hosting

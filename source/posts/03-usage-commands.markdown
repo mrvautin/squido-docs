@@ -37,6 +37,21 @@ Options:
   -h, --help  output usage information
 ```
 
+#### Import command
+
+The `import` command allows you to import content from external sources. It has the following options:
+
+``` bash
+Usage: import [options]
+
+Import from external sources
+
+Options:
+  -f, --file <path>  Specify file to import
+  -t, --type <type>  Specify the type of file to import. Eg: wordpress or ghost
+  -h, --help         output usage information
+```
+
 #### Clean command
 
 The `clean` command has the following options:
