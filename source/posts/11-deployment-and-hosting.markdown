@@ -9,6 +9,8 @@ tags:
   - netlify
   - github
   - pages
+  - aws
+  - amplify
 ---
 
 ## Netlify
@@ -44,3 +46,33 @@ Then simply build your website with `squido build -c` and push to your Github re
 You then need to set `Source` to `/docs` as shown [here](https://docs.github.com/en/pages/getting-started-with-github-pages/configuring-a-publishing-source-for-your-github-pages-site) and may need to change the branch.
 
 You can then either access at your Repo URL (`https://<github-username>.github.io`) or a [custom domain](https://docs.github.com/en/pages/configuring-a-custom-domain-for-your-github-pages-site/managing-a-custom-domain-for-your-github-pages-site#about-custom-domain-configuration)
+
+## Amazon AWS Amplify
+
+It's very easy to publish your `squido` website to [AWS Amplify](https://aws.amazon.com/amplify/). 
+
+1. Login [here](https://console.aws.amazon.com/amplify/home)
+2. Select `New App`
+3. Select `Host web app`
+4. Select the Git repository and authenticate. Eg: Github
+5. Select the Repository name and branch from the populated list(s)
+6. Click `Edit` on the build commands and ensure `baseDirectory` is set to `/build`. Eg Yaml file will look like:
+``` yaml
+version: 1
+frontend:
+  phases:
+    preBuild:
+      commands:
+        - npm ci
+    build:
+      commands:
+        - npm run build
+  artifacts:
+    baseDirectory: /build
+    files:
+      - '**/*'
+  cache:
+    paths:
+      - node_modules/**/*
+```
+7. Click `Save and deploy` and wait for your website to be built!
