@@ -36,7 +36,13 @@ const config = {
         summaryLength: 250,
         port: 4965,
         pagination: true,
-        postPerPage: 8
+        postPerPage: 8,
+        postBuild: [
+            {
+                name: 'zip',
+                options: {}
+            }
+        ]
     }
 };
 
@@ -46,3 +52,5 @@ module.exports = config;
 The configuration options are self explanatory. You can use any of the config in your template files using `{{config.<option>}}`. Eg: For example `{{config.baseUrl}}`.
 
 This is a static website so the `port` is used for spinning up a Web Server for development. 
+
+The `postBuild` array is similar to the [plugins](/plugins) which allow you to specify tasks which run after the build is complete. The above configuration runs the `zip` task which is included in `squido` core which will zip up your `build` folder into a zip here: `/build/build.zip`. You may also use this `postBuild` task in conjunction with another task to push your website to your hosting provider in Zip format rather than using Git.
