@@ -8,7 +8,7 @@ tags:
   - getting-started
 ---
 
-<img src="https://raw.githubusercontent.com/mrvautin/squido/main/docs/images/squido.svg" width="200px" height="200px">
+<img src="https://raw.githubusercontent.com/mrvautin/squido/main/docs/images/squido.svg" width="200px" height="200px" alt="squido logo">
 
 ## What is squido?
 

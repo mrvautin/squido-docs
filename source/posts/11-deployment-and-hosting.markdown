@@ -19,7 +19,7 @@ You can host this website anywhere static websites are supported. Some options a
 
 Simply connect your Git repo and set the `Build settings` settings like below:
 
-<img src="https://raw.githubusercontent.com/mrvautin/squido/main/docs/images/netlify.png" width="800px" height="auto">
+<img src="https://raw.githubusercontent.com/mrvautin/squido/main/docs/images/netlify.png" width="800px" height="auto" alt="squido logo">
 
 ## Github pages
 

@@ -36,7 +36,11 @@
     <meta name="twitter:card" value="summary" />
     <meta name="twitter:url" value="{{meta.url}}" />
     {{#if meta.image}}
-    <meta name="twitter:image" value="<{{meta.image}}" />
+    <meta name="twitter:image" value="{{meta.image}}" />
+    <meta property="og:image" content="{{meta.image}}" />
+    {{else}}
+    <meta name="twitter:image" value="/content/images/squido-social.png" />
+    <meta property="og:image" content="/content/images/squido-social.png" />
     {{/if}}
     {{#if config.twitterHandle}}
     <meta name="twitter:site" value="{{config.twitterHandle}}" />
@@ -63,7 +67,7 @@
   <body>
     <header class="navbar navbar-light bg-light flex-md-nowrap p-0 border-bottom">
       <a href="/" class="navbar-brand d-flex align-items-center mb-2 mb-md-0 me-md-auto text-dark text-decoration-none">
-        <img src="/content/images/squido.svg" alt="" width="60" height="60" class="d-inline-block align-text-top">
+        <img src="/content/images/squido.svg" alt="squido logo" width="60" height="60" class="d-inline-block align-text-top">
         <span class="fs-4 brand">squido docs</span>
       </a>
       <ul class="nav nav-pills p-1">
