@@ -2,7 +2,7 @@ const config = {
     development: {
         name: 'squido documentation',
         description: 'Squido documentation - A dead simple static website generator',
-        twitterHandle: '@mrvautin',
+        twitterHandle: '@squido_app',
         baseUrl: 'http://localhost:4965',
         sourcesExt: 'markdown',
         layout: 'layout.hbs',
@@ -22,7 +22,7 @@ const config = {
     production: {
         name: 'squido documentation',
         description: 'Squido documentation - A dead simple static website generator',
-        twitterHandle: '@mrvautin',
+        twitterHandle: '@squido_app',
         baseUrl: 'https://docs.squido.org',
         sourcesExt: 'markdown',
         layout: 'layout.hbs',

@@ -39,11 +39,12 @@
     <meta name="twitter:image" value="{{meta.image}}" />
     <meta property="og:image" content="{{meta.image}}" />
     {{else}}
-    <meta name="twitter:image" value="/content/images/squido-social.png" />
-    <meta property="og:image" content="/content/images/squido-social.png" />
+    <meta name="twitter:image" value="{{config.baseUrl}}/content/images/squido-social.png" />
+    <meta property="og:image" content="{{config.baseUrl}}/content/images/squido-social.png" />
     {{/if}}
     {{#if config.twitterHandle}}
     <meta name="twitter:site" value="{{config.twitterHandle}}" />
+    <meta name="twitter:creator" content="{{config.twitterHandle}}" />
     {{/if}}
     <link rel="alternate" type="application/rss+xml" href="{{config.baseUrl}}/rss" />
     <link rel="alternate" type="application/atom+xml" href="{{config.baseUrl}}/atom" />
