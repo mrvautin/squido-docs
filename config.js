@@ -1,6 +1,6 @@
 const config = {
     development: {
-        name: 'squido docs',
+        name: 'squido documentation',
         description: 'Squido documentation - A dead simple static website generator',
         twitterHandle: '@mrvautin',
         baseUrl: 'http://localhost:4965',
@@ -20,7 +20,7 @@ const config = {
         ]
     },
     production: {
-        name: 'squido docs',
+        name: 'squido documentation',
         description: 'Squido documentation - A dead simple static website generator',
         twitterHandle: '@mrvautin',
         baseUrl: 'https://docs.squido.org',
