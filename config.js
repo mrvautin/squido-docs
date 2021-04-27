@@ -16,6 +16,10 @@ const config = {
             {
                 name: 'search',
                 options: {}
+            },
+            {
+                name: 'robots',
+                options: {}
             }
         ]
     },
@@ -35,6 +39,10 @@ const config = {
         plugins: [
             {
                 name: 'search',
+                options: {}
+            },
+            {
+                name: 'robots',
                 options: {}
             }
         ]
