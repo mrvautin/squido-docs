@@ -8,7 +8,7 @@ tags:
   - themes
 ---
 
-Templates use [Handlebars](https://handlebarsjs.com) formatting and the `{{}}` syntax.
+Templates use [Handlebars](https://handlebarsjs.com) formatting and the `{{}}` syntax or [EJS](https://github.com/mde/ejs).
 
 The template files needed by default are:
 
