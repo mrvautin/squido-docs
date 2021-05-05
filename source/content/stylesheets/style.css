@@ -69,6 +69,28 @@ h1, h2, h3, h4{
     min-height: 100vh;
 }
 
+.bd-callout {
+    padding: 1.25rem;
+    margin-top: 1.25rem;
+    margin-bottom: 1.25rem;
+    border: 1px solid #e9ecef;
+    border-left-width: .25rem;
+    border-radius: .25rem;
+}
+
+.bd-callout-info {
+    border-left-color: #5bc0de !important;
+}
+.bd-callout-warning {
+    border-left-color: #f0ad4e !important;
+}
+.bd-callout-danger {
+    border-left-color: #d9534f !important;
+}
+.bd-callout-squido {
+    border-left-color: #FF96A9 !important;
+}
+
 @media (min-width: 576px) {
     .brand{
         font-size: 2.8rem !important;

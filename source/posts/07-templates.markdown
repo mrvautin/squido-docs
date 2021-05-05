@@ -8,7 +8,12 @@ tags:
   - themes
 ---
 
-Templates use [Handlebars](https://handlebarsjs.com) formatting and the `{{}}` syntax or [EJS](https://github.com/mde/ejs).
+Templates use [Handlebars](https://handlebarsjs.com) formatting and the `{{}}` syntax or [EJS](https://github.com/mde/ejs). This guide will show `Handlebars` formatting. Documentation on changing the `templateEngine` can be found [here](https://docs.squido.org/configuration/).
+
+<div class="bd-callout bd-callout-squido">
+This guide will show examples in <code>Handlebars</code> formatting.
+Documentation on changing the <code>templateEngine</code> can be found <a href="https://docs.squido.org/configuration/">here</a>.
+</div>
 
 The template files needed by default are:
 
