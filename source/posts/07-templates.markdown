@@ -168,7 +168,7 @@ Within a post you have access to a `tag` array which contains all the tags for t
     <div class="col-md-8 offset-md-2 mb-5">
         <h5 class="text-muted">Tags:</h5>
         {{#each tags}}
-        <a href="/tag/{{this}}">{{this}}</a> |
+        <a href="/tag/{{this}}/">{{this}}</a> |
         {{/each}}
     </div>
 </div>
@@ -192,10 +192,10 @@ An example displaying the pagination might look like:
     <p class="text-muted">Page {{page}} of {{pages}}</p>
     <div class="btn-group" role="group">
     {{#if prevPage }}
-        <a href="/page/{{prevPage}}" class="btn btn-outline-secondary">&laquo; Prev Page</a>
+        <a href="/page/{{prevPage}}/" class="btn btn-outline-secondary">&laquo; Prev Page</a>
     {{/if}}
     {{#if nextPage }}
-        <a href="/page/{{nextPage}}" class="btn btn-outline-secondary">Next Page &raquo;</a>
+        <a href="/page/{{nextPage}}/" class="btn btn-outline-secondary">Next Page &raquo;</a>
     {{/if}}
     </div>
   </div>
