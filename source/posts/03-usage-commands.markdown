@@ -80,3 +80,22 @@ Options:
   -c --clean  Cleans build directory
   -h, --help  output usage information
 ```
+
+#### New command
+
+This command sets up a new website from our blog template. 
+
+<div class="bd-callout bd-callout-squido">
+Warning: This will overwrite any existing content you've created
+</div>
+
+The `new` command has the following options:
+
+``` bash
+Usage: new [options]
+
+Sets up a new website
+
+Options:
+  -h, --help  output usage information
+```

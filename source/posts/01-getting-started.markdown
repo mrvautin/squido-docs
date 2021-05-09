@@ -22,29 +22,50 @@ Simply install the `squido` cli module globally in order to build and manage you
 
 With npm
 ``` plaintext
-npm install -g squido
+$ npm install -g squido
 ```
 
 Or with Yarn
 ``` plaintext
-yarn global add squido
+$ yarn global add squido
 ```
 
 npm from Github
 ``` plaintext
-npm i -g https://github.com/mrvautin/squido
+$ npm i -g https://github.com/mrvautin/squido
+```
+
+### Start from default blog setup
+
+<div class="bd-callout bd-callout-squido">
+Warning: This will overwrite any existing content you've created
+</div>
+
+Make your `squido` website directory:
+``` plaintext
+$ mkdir my-squido-website
+```
+
+Enter your new `squido` website directory:
+``` plaintext
+$ cd my-squido-website
+```
+
+Setup a new `squido` website from defaults
+``` plaintext
+$ squido new
 ```
 
 ### Start from scratch
 
 Make your `squido` website directory:
 ``` plaintext
-mkdir my-squido-website
+$ mkdir my-squido-website
 ```
 
 Enter your new `squido` website directory:
 ``` plaintext
-cd my-squido-website
+$ cd my-squido-website
 ```
 
 Get started building your `squido` website [structure](https://docs.squido.org/structure/).
@@ -54,7 +75,7 @@ Get started building your `squido` website [structure](https://docs.squido.org/s
 The example we will use below is our [blog](https://github.com/mrvautin/squido-blog) example. There is also a [documentation](https://github.com/mrvautin/squido-docs) website example you can use. 
 
 ``` plaintext
-git clone https://github.com/mrvautin/squido-blog my-squido-website
+$ git clone https://github.com/mrvautin/squido-blog my-squido-website
 ```
 
 Replace `my-squido-website` with your new website directory name
@@ -62,12 +83,12 @@ Replace `my-squido-website` with your new website directory name
 
 Enter your new `squido` website directory:
 ``` plaintext
-cd my-squido-website
+$ cd my-squido-website
 ```
 
 Run the following command to build, clean, serve and watch for changes:
 ``` plaintext
-squido serve -b -w -c
+$ squido serve -b -w -c
 ```
 
 You can then visit your website here:
@@ -130,19 +151,19 @@ date: '2021-03-10 01:59:00'
 8. Add your new files to first commit:
 
 ``` bash
-git add .
+$ git add .
 ```
 
 9. Commit your files/changes:
 
 ``` bash
-git commit -m "First commit"
+$ git commit -m "First commit"
 ```
 
 10. Push your changes to your repository:
 
 ``` bash
-git push
+$ git push
 ```
 
 Setup the [deploy/hosting](https://docs.squido.org/deployment-and-hosting/).
