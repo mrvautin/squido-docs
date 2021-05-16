@@ -32,9 +32,9 @@ New meta data values can be access in the layouts using `{{meta.<new value>}}`.
 
 The permalink is required. Its used to build the URL for your website: Eg. The above will output a post at: `https://example.com/caede-virides-oculos-armentis`
 
-The `ignore` and `hidden` are optional tags for controlling the visibility of posts.
+The `visible` and `hidden` are optional tags for controlling the visibility of posts. `Defaults is "true"` or visible.
 
-- `ignore`: If set to `true`, the post will not be in the pagination and won't show on the index page.
+- `visible`: If set to `false`, the post will not be in the pagination and won't show on the index page.
 - `hidden`: If set to `true`, the post will not be in the sitemap and RSS feeds.
 
 ### Template file
