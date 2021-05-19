@@ -19,7 +19,13 @@ You can host this website anywhere static websites are supported. Some options a
 
 Simply connect your Git repo and set the `Build settings` settings like below:
 
-<img src="https://raw.githubusercontent.com/mrvautin/squido/main/docs/images/netlify.png" width="800px" height="auto" alt="squido logo">
+![Netlify build](/content/images/netlify-build.png)
+
+And set the Environment variable to align with your `config.js` file:
+
+![Netlify environment](/content/images/netlify-environment.png)
+
+You are done. Now each push to your Git repo will trigger the build and deploy on [Netlify](https://www.netlify.com).
 
 ## Github pages
 
