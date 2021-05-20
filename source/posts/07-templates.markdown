@@ -40,7 +40,7 @@ If you were to render your posts you may want to do something like where `{{#eac
   {{#each posts}}
   <div class="article">
     <h2>
-      <a href="/{{this.permalink}}">{{this.title}}</a> 
+      <a href="/{{this.permalink}}/">{{this.title}}</a> 
     </h2>
     {{this.summary}}
   </div>
@@ -85,12 +85,12 @@ A simple template could look like:
       <div class="card-body">
         <p class="card-text">
           <h2>
-            <a href="/{{this.permalink}}">{{this.title}}</a> 
+            <a href="/{{this.permalink}}/">{{this.title}}</a> 
           </h2>
           {{this.summary}}
         </p>
         <div class="d-flex justify-content-between align-items-center">
-          <a class="btn btn-outline-secondary" href="/{{this.permalink}}">Read more..</a>
+          <a class="btn btn-outline-secondary" href="/{{this.permalink}}/">Read more..</a>
         </div>
       </div>
     </div>
@@ -119,7 +119,7 @@ A simple template could look like:
           {{this.summary}}
         </p>
         <div class="d-flex justify-content-between align-items-center">
-          <a class="btn btn-outline-secondary" href="/{{this.permalink}}">Read more..</a>
+          <a class="btn btn-outline-secondary" href="/{{this.permalink}}/">Read more..</a>
         </div>
       </div>
     </div>
