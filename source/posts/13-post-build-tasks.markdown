@@ -2,7 +2,7 @@
 title: Post build tasks
 permalink: post-build-tasks
 description: Getting started with the squido post build tasks
-date: '2021-02-27 01:52:00'
+date: '2021-02-26 01:52:00'
 tags: 
   - deployment
   - hosting
