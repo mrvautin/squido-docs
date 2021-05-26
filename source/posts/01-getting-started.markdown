@@ -14,7 +14,7 @@ tags:
 
 `squido` is a dead simple static website builder which can be hosted anywhere for super fast websites and very little effort.
 
-The idea is to be a `no code` setup and have everything you need to run and host a website. You simply do the writing and customization of style and layout. 
+The idea is to be a `no-code` setup and have everything you need to run and host a website. You simply do the writing and customization of style and layout. 
 
 ## Installation
 
