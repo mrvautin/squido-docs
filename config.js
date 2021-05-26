@@ -1,7 +1,7 @@
 const config = {
     development: {
         name: 'squido documentation',
-        description: 'Squido documentation - A dead simple static website generator',
+        description: 'Squido documentation - A dead-simple Node.js static HTML website generator for super fast static websites which are easier to develop, more secure and dirt cheap to host.',
         twitterHandle: '@squido_app',
         facebookApp: '1492953114375539',
         baseUrl: 'http://localhost:4965',
@@ -26,7 +26,7 @@ const config = {
     },
     production: {
         name: 'squido documentation',
-        description: 'Squido documentation - A dead simple static website generator',
+        description: 'Squido documentation - A dead-simple Node.js static HTML website generator for super fast static websites which are easier to develop, more secure and dirt cheap to host.',
         twitterHandle: '@squido_app',
         facebookApp: '1492953114375539',
         baseUrl: 'https://docs.squido.org',
