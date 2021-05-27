@@ -72,10 +72,10 @@ Get started building your `squido` website [structure](https://docs.squido.org/s
 
 ### Start from template
 
-The example we will use below is our [blog](https://github.com/mrvautin/squido-blog) example. There is also a [documentation](https://github.com/mrvautin/squido-docs) website example you can use. 
+The example we will use below is our [blog](https://github.com/mrvautin/squido-blog-example) example. There is also a [documentation](https://github.com/mrvautin/squido-docs) website example you can use. 
 
 ``` plaintext
-$ git clone https://github.com/mrvautin/squido-blog my-squido-website
+$ git clone https://github.com/mrvautin/squido-blog-example my-squido-website
 ```
 
 Replace `my-squido-website` with your new website directory name
