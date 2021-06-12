@@ -102,7 +102,7 @@ http://localhost:4965
 
 ### Without Git
 
-Whilst it's best and easiest (depending on the user) to use `squido` with Git to manage deployment and source control. If you don't want to use Git you can use our [Post Build](/post-build-tasks) tasks to easily deploy and manage your website. 
+Whilst it's best and easiest (depending on the user) to use `squido` with Git to manage deployment and source control. If you don't want to use Git you can use our [Post Build](/post-build-tasks/) tasks to easily deploy and manage your website. 
 
 ### Create Git repository
 

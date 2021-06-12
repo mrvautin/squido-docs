@@ -12,7 +12,7 @@ tags:
   - git
 ---
 
-Post build tasks are tasks which run after the website is built. You can configure zipping up your website, automatic deployment etc to make deploying your website faster. See [configuration](/configuration) for information on configuring a task.
+Post build tasks are tasks which run after the website is built. You can configure zipping up your website, automatic deployment etc to make deploying your website faster. See [configuration](/configuration/) for information on configuring a task.
 
 ## Zip
 

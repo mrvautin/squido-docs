@@ -7,7 +7,7 @@ tags:
   - posts
 ---
 
-Posts are essentially pages or blog posts or whatever you like. The content of the post/page is contained in markdown files within the `/source/posts` folder. The post markdown or contents is rendered using the `post.hbs` template file. You can edit this any which way your want. See [templates](/templates) for more information.
+Posts are essentially pages or blog posts or whatever you like. The content of the post/page is contained in markdown files within the `/source/posts` folder. The post markdown or contents is rendered using the `post.hbs` template file. You can edit this any which way your want. See [templates](/templates/) for more information.
 
 Posts have a meta data component at the top of the file which directs how the file is built. The meta data is `yaml` formatted and sits between two `---` tags. Eg:
 
