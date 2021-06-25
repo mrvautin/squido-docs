@@ -32,7 +32,7 @@ $ yarn global add squido
 
 npm from Github
 ``` plaintext
-$ npm i -g https://github.com/mrvautin/squido
+$ npm i -g https://github.com/mrvautin/squido.git
 ```
 
 ### Start from default blog setup
