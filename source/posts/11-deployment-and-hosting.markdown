@@ -82,3 +82,43 @@ frontend:
       - node_modules/**/*
 ```
 7. Click `Save and deploy` and wait for your website to be built!
+
+## Azure Static Web Apps
+
+Publishing your `squido` website to [Azure Static Web Apps](https://docs.microsoft.com/en-us/azure/static-web-apps/publish-devops?wt.mc_id=azurestaticwebapps_inline_inproduct_general) is quite easy and low cost. 
+
+### Prerequisites:
+- [Azure Subscription](https://azure.microsoft.com/en-us/)
+- [Azure DevOps](https://azure.microsoft.com/en-us/pricing/details/devops/azure-devops-services/)
+
+1. Visit [portal.azure.com](portal.azure.com), login and create a free Static Web App.
+  a. To use Azure DevOps instead of a Github repo, select "Other" under `Deployment details`
+  b. Once the resource is provisioned, from the Static Web App Overview page, click `Manage Deployment Token`
+  c. Copy this token somewhere safe. It will be used shortly.
+![image](https://user-images.githubusercontent.com/8636973/123503632-0f057e00-d609-11eb-816d-50990e122d90.png)
+2. Visit [devops.azure.com](devops.azure.com), login and create a New Project
+3. Click `Repos` and clone the Azure repo to your local machine
+  a. Either move your existing `squido` site into this local repo, or create a new `squido` site
+  b. Commit and push code to this Azure DevOps repo
+5. Click `Pipelines` and create a new Pipeline for the project
+  a. Select `Starter Pipeline` and paste in the yaml template below
+```
+trigger:
+  - main
+
+pool:
+  vmImage: ubuntu-latest
+
+steps:
+  - checkout: self
+    submodules: true
+  - task: AzureStaticWebApp@0
+    inputs:
+      app_location: '/'
+      output_location: '/build'
+      azure_static_web_apps_api_token: $(deployment_token)
+```
+6. Click `Variables` then `New Variable`
+  a. Name the variable `deployment_token` and paste in the `Deployment Token` from Step 1c. above
+7. Save and run the Pipeline
+8. Visit the URL shown in Static Web Apps in Azure Portal
