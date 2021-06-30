@@ -20,19 +20,19 @@ The idea is to be a `no-code` setup and have everything you need to run and host
 
 Simply install the `squido` cli module globally in order to build and manage your static site.
 
-With npm
+From Github (preferred for latest version)
+``` plaintext
+$ npm i -g https://github.com/mrvautin/squido.git
+```
+
+From npm
 ``` plaintext
 $ npm install -g squido
 ```
 
-Or with Yarn
+With Yarn
 ``` plaintext
 $ yarn global add squido
-```
-
-npm from Github
-``` plaintext
-$ npm i -g https://github.com/mrvautin/squido.git
 ```
 
 ### Start from default blog setup
