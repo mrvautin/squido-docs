@@ -43,4 +43,5 @@ const config = {
 ```
 
 `name`: the name of the plugin. This also needs to match the name of the file. Eg: `/source/plugins/search.js`
+
 `options`: An arg object passed into the plugin. 
