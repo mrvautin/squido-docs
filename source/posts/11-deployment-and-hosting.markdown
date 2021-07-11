@@ -1,7 +1,7 @@
 ---
 title: Deployment and hosting
 permalink: deployment-and-hosting
-description: Getting started with the squido deploying and hosting your website
+description: Getting started with deploying and hosting your squido website. Deployment guides using Netlify, Github Pages, AWS Amplify, Cloudflare Pages and more
 date: '2021-02-28 01:52:00'
 tags: 
   - deployment
@@ -11,6 +11,7 @@ tags:
   - pages
   - aws
   - amplify
+  - cloudflare
 ---
 
 ## Netlify
@@ -82,3 +83,18 @@ frontend:
       - node_modules/**/*
 ```
 7. Click `Save and deploy` and wait for your website to be built!
+
+## Cloudflare Pages
+
+It's very easy to publish your `squido` website to [Cloudflare pages](https://pages.cloudflare.com/). 
+
+1. Login [here](https://pages.cloudflare.com/)
+2. Select `Create new project`
+3. Link your Github account and select your repository, then `Begin setup`
+4. Setup like:
+
+![Cloudflare setup](/content/images/cloudflare-pages.png)
+
+5. Click `Save and deploy`
+6. Wait for the build to complete
+7. You can then setup `Custom domains` and you are done
