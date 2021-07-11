@@ -86,7 +86,7 @@ frontend:
 
 ## Cloudflare Pages
 
-It's very easy to publish your `squido` website to [Cloudflare pages](https://pages.cloudflare.com/). 
+It's very easy to publish your `squido` website for `FREE` using [Cloudflare pages](https://pages.cloudflare.com/). Free SSL, custom domain, global CDN and more and just super simple to setup.
 
 1. Login [here](https://pages.cloudflare.com/)
 2. Select `Create new project`
