@@ -1,7 +1,7 @@
 ---
 title: Deployment and hosting
 permalink: deployment-and-hosting
-description: Getting started with deploying and hosting your squido website. Deployment guides using Netlify, Github Pages, AWS Amplify, Cloudflare Pages and more
+description: Getting started with deploying and hosting your squido website. Deployment guides using Netlify, Github Pages, AWS Amplify, Cloudflare Pages, Digitalocean app and more
 date: '2021-02-28 01:52:00'
 tags: 
   - deployment
@@ -12,6 +12,7 @@ tags:
   - aws
   - amplify
   - cloudflare
+  - digitalocean
 ---
 
 ## Netlify
@@ -98,3 +99,26 @@ It's very easy to publish your `squido` website for `FREE` using [Cloudflare pag
 5. Click `Save and deploy`
 6. Wait for the build to complete
 7. You can then setup `Custom domains` and you are done
+
+## Digitalocean Apps
+
+[Digitalocean Apps](https://cloud.digitalocean.com/apps?refcode=cd185d01653f) makes hosting your static HTML `squido` website for `FREE` just so bloody easy. [Digitalocean Apps](https://cloud.digitalocean.com/apps?refcode=cd185d01653f) offers free SSL, custom domain, global CDN and more.
+
+1. Login [here](https://cloud.digitalocean.com/apps?refcode=cd185d01653f)
+2. Select `Github` as source and choose your `squido` Repository:
+
+![Digitalocean source](/content/images/digitalocean-source.png)
+
+3. Hit `Next`
+4. Setup like:
+
+![Digitalocean setup](/content/images/digitalocean-config.png)
+
+5. Hit `Next`.
+5. Name your app then hit `Next` once more
+6. Select the plan. Choose `Starter` for `FREE` hosting
+7. Hit `Launch Starter App`
+8. Wait for your app to build. Watch the logs by clicking the `View logs` button
+9. Once your build is complete you can select `Settings` and configure your domain and more
+
+You are done. Enjoy your super fast hosting on the awesome Digitalocean platform!
