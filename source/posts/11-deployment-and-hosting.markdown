@@ -122,3 +122,40 @@ It's very easy to publish your `squido` website for `FREE` using [Cloudflare pag
 9. Once your build is complete you can select `Settings` and configure your domain and more
 
 You are done. Enjoy your super fast hosting on the awesome Digitalocean platform!
+
+## Azure Static Web Apps
+
+Publishing your `squido` website to [Azure Static Web Apps](https://azure.microsoft.com/en-au/services/app-service/static/) is very easy and low cost. 
+
+1. Visit [portal.azure.com](portal.azure.com), login and create a free Static Web App. 
+2. To use Azure DevOps instead of a Github repo, select `Other` under `Deployment details`.
+3. Once the resource is provisioned, from the Static Web App Overview page, click `Manage Deployment Token`. Copy this token somewhere safe. It will be used later.
+
+![image](/content/images/azure-setup.png)
+
+4. Visit [devops.azure.com](devops.azure.com), login and create a New Project
+5. Click `Repos` and clone the Azure repo to your local machine. Either move your existing `squido` site into this local repo, or create a new `squido` site. Commit and push code to this Azure DevOps repo
+6. Click `Pipelines` and create a new Pipeline for the project. Select `Starter Pipeline` and paste in the yaml template below
+
+``` yaml
+trigger:
+  - main
+pool:
+  vmImage: ubuntu-latest
+variables:
+- name: NODE_ENV
+  value: production 
+steps:
+  - checkout: self
+    submodules: true
+  - task: AzureStaticWebApp@0
+    inputs:
+      app_location: '/'
+      output_location: '/build'
+      azure_static_web_apps_api_token: $(deployment_token)
+```
+
+7. Click `Variables` then `New Variable`
+8. Name the variable `deployment_token` and paste in the `Deployment Token` from Step 1c. above
+9. Save and run the Pipeline
+10. Visit the URL shown in Static Web Apps in Azure Portal
