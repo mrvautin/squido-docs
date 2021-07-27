@@ -23,7 +23,7 @@ Commands:
   serve [options]  Serves website
 ```
 
-#### Build command
+## Build command
 
 The `build` command has the following options:
 
@@ -37,7 +37,7 @@ Options:
   -h, --help  output usage information
 ```
 
-#### Import command
+## Import command
 
 The `import` command allows you to import content from external sources. It has the following options:
 
@@ -52,7 +52,7 @@ Options:
   -h, --help         output usage information
 ```
 
-#### Clean command
+## Clean command
 
 The `clean` command has the following options:
 
@@ -65,7 +65,7 @@ Options:
   -h, --help  output usage information
 ```
 
-#### Serve command
+## Serve command
 
 The `serve` command has the following options:
 
@@ -81,7 +81,7 @@ Options:
   -h, --help  output usage information
 ```
 
-#### New command
+## New command
 
 This command sets up a new website from our blog template. 
 

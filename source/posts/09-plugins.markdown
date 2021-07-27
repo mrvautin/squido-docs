@@ -8,7 +8,7 @@ tags:
   - environment variable
 ---
 
-Plugins can be created for if core functionality is not included or customisation is required. Plugins run at the final step of the build so you can override any of the existing steps if needed.
+Plugins can be created if core functionality is not included or customization is required. Plugins run at the final step of the build so you can override any of the existing steps if needed.
 
 Plugins are Javascript files within `/<source dir>/plugins/<plugin name>.js`. 
 
@@ -25,7 +25,7 @@ module.exports = {
 };
 ```
 
-### Configuration
+## Configuration
 
 Adding plugins to your `/config.js` file is simple by adding the plugin to the plugins array:
 
@@ -47,7 +47,7 @@ const config = {
 
 `options`: An arg object passed into the plugin. 
 
-### Environment variables
+## Environment variables
 
 You can access environment variables in your plugins using the `process.squido.envVars` object. 
 
