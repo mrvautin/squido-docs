@@ -204,4 +204,42 @@ An example displaying the pagination might look like:
 {{/if}}
 ```
 
+## Partials
+
+### Handlebars
+
+Partials can be created in `/source/partials` and can be used in layout and other template files. 
+
+Once a file is created you can add it to your template using:
+
+``` handlebars
+{{> header}}
+```
+
+> Where `header` is the name of the file `header.hbs` located: `/source/partials/header.hbs`
+
+### EJS
+
+`ejs` handling of partials is a little more flexible. You can setup your config using the `templateConfig.views` option with the directory where the partials will exist. Eg:
+
+``` javascript
+const config = {
+  development: {
+      name: 'squido',
+      description: 'This is the blog description',
+      twitterHandle: '@mrvautin',
+      baseUrl: 'http://localhost:4965',
+      sourcesExt: 'markdown',
+      templateEngine: 'ejs',
+      templateConfig: {
+        views: ['source/partials']
+      },
+      sourceDir: 'source',
+      buildDir: 'build',
+      ...
+    }
+}
+```
+
+> Note: The `templateConfig.views` takes an array of paths 
 
