@@ -127,13 +127,13 @@ You are done. Enjoy your super fast hosting on the awesome Digitalocean platform
 
 Publishing your `squido` website to [Azure Static Web Apps](https://azure.microsoft.com/en-au/services/app-service/static/) is very easy and low cost. 
 
-1. Visit [portal.azure.com](portal.azure.com), login and create a free Static Web App. 
+1. Visit [https://portal.azure.com](https://portal.azure.com), login and create a free Static Web App. 
 2. To use Azure DevOps instead of a Github repo, select `Other` under `Deployment details`.
 3. Once the resource is provisioned, from the Static Web App Overview page, click `Manage Deployment Token`. Copy this token somewhere safe. It will be used later.
 
 ![image](/content/images/azure-setup.png)
 
-4. Visit [devops.azure.com](devops.azure.com), login and create a New Project
+4. Visit [https://devops.azure.com](https://devops.azure.com), login and create a New Project
 5. Click `Repos` and clone the Azure repo to your local machine. Either move your existing `squido` site into this local repo, or create a new `squido` site. Commit and push code to this Azure DevOps repo
 6. Click `Pipelines` and create a new Pipeline for the project. Select `Starter Pipeline` and paste in the yaml template below
 
