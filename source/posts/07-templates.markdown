@@ -8,7 +8,7 @@ tags:
   - themes
 ---
 
-Templates use [Handlebars](https://handlebarsjs.com) formatting and the `{{}}` syntax or [EJS](https://github.com/mde/ejs). This guide will show `Handlebars` formatting. Documentation on changing the `templateEngine` can be found [here](https://docs.squido.org/configuration/).
+Templates use [Handlebars](https://handlebarsjs.com) formatting and the `{{}}` syntax, [EJS](https://github.com/mde/ejs) or [pug](https://pugjs.org/). This guide will show `Handlebars` formatting. Documentation on changing the `templateEngine` can be found [here](https://docs.squido.org/configuration/).
 
 <div class="bd-callout bd-callout-squido">
 This guide will show examples in <code>Handlebars</code> formatting.
@@ -243,3 +243,27 @@ const config = {
 
 > Note: The `templateConfig.views` takes an array of paths 
 
+### Pug
+
+![Pug](https://pugjs.org/) partials is super easy. You need to setup the root by setting the `templateConfig.basedir` to `__dirname`. Eg:
+
+``` javascript
+const config = {
+  development: {
+      name: 'squido',
+      description: 'This is the blog description',
+      twitterHandle: '@mrvautin',
+      baseUrl: 'http://localhost:4965',
+      sourcesExt: 'markdown',
+      templateEngine: 'pug',
+      templateConfig: {
+        basedir: __dirname
+      },
+      sourceDir: 'source',
+      buildDir: 'build',
+      ...
+    }
+}
+```
+
+Then in a template you can include a partial by adding the following: `include /source/partials/header.pug`

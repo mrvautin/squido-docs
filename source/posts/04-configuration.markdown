@@ -57,6 +57,6 @@ The configuration options are self explanatory. You can use any of the config in
 
 This is a static website so the `port` is used for spinning up a Web Server for development.
 
-The `templateEngine` config allows for the setting of which template engine to use - either: `hbs` or `ejs` is allowed. The `templateConfig` object allows for the passing of configurations and is used when `ejs` is set for the `templateEngine`. See [here](https://github.com/mde/ejs#options) for available `ejs` options.
+The `templateEngine` config allows for the setting of which template engine to use - either: `hbs`, `ejs` or `pug` is allowed. The `templateConfig` object allows for the passing of configurations and is used when `ejs` or `pug` is set for the `templateEngine`. See [here](https://github.com/mde/ejs#options) for available `ejs` options and [here](https://pugjs.org/api/reference.html#options) or `pug`.
 
 The `postBuild` array is similar to the [plugins](/plugins/) which allow you to specify tasks which run after the build is complete. The above configuration runs the `zip` task which is included in `squido` core which will zip up your `build` folder into a zip here: `/build/build.zip`. You may also use this `postBuild` task in conjunction with another task to push your website to your hosting provider in Zip format rather than using Git.
