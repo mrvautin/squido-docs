@@ -245,7 +245,7 @@ const config = {
 
 ### Pug
 
-![Pug](https://pugjs.org/) partials is super easy. You need to setup the root by setting the `templateConfig.basedir` to `__dirname`. Eg:
+[Pug](https://pugjs.org/) partials is super easy. You need to setup the root by setting the `templateConfig.basedir` to `__dirname`. Eg:
 
 ``` javascript
 const config = {
