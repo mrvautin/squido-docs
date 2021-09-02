@@ -204,6 +204,50 @@ An example displaying the pagination might look like:
 {{/if}}
 ```
 
+## Swagger
+
+`squido` supports [Swagger](https://swagger.io/) so you can setup your static API documentation. Simply grab our demo [swagger.hbs](https://github.com/mrvautin/squido/blob/main/source/swagger.hbs) template and setup a [post](/posts) like the following where `template: swagger.hbs` is the path to the Swagger template file in your `sourceDir`:
+
+``` yaml
+---
+title: Swagger API docs
+permalink: api
+description: Swagger API Docs
+date: '2021-05-11 19:17:00'
+template: swagger.hbs
+visible: false
+hidden: false
+---
+```
+
+Then setup your `config.js` to include the Swagger data like:
+
+``` javascript
+const config = {
+  development: {
+      name: 'squido',
+      description: 'This is the blog description',
+      twitterHandle: '@mrvautin',
+      baseUrl: 'http://localhost:4965',
+      sourcesExt: 'markdown',
+      templateEngine: 'ejs',
+      templateConfig: {
+        views: ['source/partials']
+      },
+      swaggerDocs: {
+        enabled: true,
+        type: 'yaml',
+        swaggerFile: 'swagger.yaml'
+      },
+      sourceDir: 'source',
+      buildDir: 'build',
+      ...
+    }
+}
+```
+
+> Where `swaggerFile` is the name of your swagger.yaml file. Note: the `type` can also be set to `json` for a JSON formatted Swagger file. 
+
 ## Partials
 
 ### Handlebars
