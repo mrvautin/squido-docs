@@ -206,7 +206,7 @@ An example displaying the pagination might look like:
 
 ## Swagger
 
-`squido` supports [Swagger](https://swagger.io/) so you can setup your static API documentation. Simply grab our demo [swagger.hbs](https://github.com/mrvautin/squido/blob/main/source/swagger.hbs) template and setup a [post](/posts) like the following where `template: swagger.hbs` is the path to the Swagger template file in your `sourceDir`:
+`squido` supports [Swagger](https://swagger.io/) so you can setup super fast static API documentation. Simply grab our demo [swagger.hbs](https://github.com/mrvautin/squido/blob/main/source/swagger.hbs) template and setup a [post](/posts) like the following where `template: swagger.hbs` is the path to the [Swagger](https://swagger.io/) template file in your `sourceDir`:
 
 ``` yaml
 ---
@@ -230,10 +230,7 @@ const config = {
       twitterHandle: '@mrvautin',
       baseUrl: 'http://localhost:4965',
       sourcesExt: 'markdown',
-      templateEngine: 'ejs',
-      templateConfig: {
-        views: ['source/partials']
-      },
+      templateEngine: 'hbs',
       swaggerDocs: {
         enabled: true,
         type: 'yaml',
@@ -246,7 +243,7 @@ const config = {
 }
 ```
 
-> Where `swaggerFile` is the name of your swagger.yaml file. Note: the `type` can also be set to `json` for a JSON formatted Swagger file. 
+> Where `swaggerFile` is the name of your `swagger.yaml` file in relation to your `sourceDir`. Note: the `type` can also be set to `json` for a JSON formatted Swagger file. 
 
 ## Partials
 
