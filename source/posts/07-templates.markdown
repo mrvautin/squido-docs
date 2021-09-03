@@ -210,9 +210,9 @@ An example displaying the pagination might look like:
 
 Adding custom data is as simple as adding the following Array of Objects to your `config.js` file. You will need to have the following properties:
 
-`name` = The name which is accessible in your template. Eg: A `name` of `swagger` will mean the contents of the file is accessible at `data.swagger`.
-`type` = Supported types are: `yaml`, `json` or `text`
-`file` = The file path in relation to your `sourceDir`. In the example below the file is located: `source/swagger.yaml`
+- `name` = The name which is accessible in your template. Eg: A `name` of `swagger` will mean the contents of the file is accessible at `data.swagger`.
+- `type` = Supported types are: `yaml`, `json` or `text`
+- `file` = The file path in relation to your `sourceDir`. In the example below the file is located: `source/swagger.yaml`
 
 A full example below:
 
