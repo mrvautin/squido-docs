@@ -204,9 +204,44 @@ An example displaying the pagination might look like:
 {{/if}}
 ```
 
+## Custom data
+
+`squido` supports the adding of custom data to your website. This function allows for `yaml`, `json` or `text` formatted files to be parsed and added to the data available in your templates.
+
+Adding custom data is as simple as adding the following Array of Objects to your `config.js` file. You will need to have the following properties:
+
+`name` = The name which is accessible in your template. Eg: A `name` of `swagger` will mean the contents of the file is accessible at `data.swagger`.
+`type` = Supported types are: `yaml`, `json` or `text`
+`file` = The file path in relation to your `sourceDir`. In the example below the file is located: `source/swagger.yaml`
+
+A full example below:
+
+``` javascript
+const config = {
+  development: {
+      name: 'squido',
+      description: 'This is the blog description',
+      twitterHandle: '@mrvautin',
+      baseUrl: 'http://localhost:4965',
+      sourcesExt: 'markdown',
+      templateEngine: 'hbs',
+      data: [
+        {
+            name: 'swagger',
+            type: 'yaml',
+            file: 'swagger.yaml'
+        }
+      ],
+      sourceDir: 'source',
+      buildDir: 'build',
+      ...
+    }
+}
+```
+
 ## Swagger
 
-`squido` supports [Swagger](https://swagger.io/) so you can setup super fast static API documentation. Simply grab our demo [swagger.hbs](https://github.com/mrvautin/squido/blob/main/source/swagger.hbs) template and setup a [post](/posts) like the following where `template: swagger.hbs` is the path to the [Swagger](https://swagger.io/) template file in your `sourceDir`:
+`squido` supports [Swagger](https://swagger.io/) using our [custom data](/templates/#custom-data) functionality. You can use this to setup super fast static API documentation. Simply grab our demo [swagger.hbs](https://github.com/mrvautin/squido/blob/main/source/swagger.hbs) template and setup a [post](/posts) like the following where `template: swagger.hbs` is the path to the [Swagger](https://swagger.io/) template file in your `sourceDir`:
 
 ``` yaml
 ---
@@ -231,11 +266,13 @@ const config = {
       baseUrl: 'http://localhost:4965',
       sourcesExt: 'markdown',
       templateEngine: 'hbs',
-      swaggerDocs: {
-        enabled: true,
-        type: 'yaml',
-        swaggerFile: 'swagger.yaml'
-      },
+      data: [
+        {
+            name: 'swagger',
+            type: 'yaml',
+            file: 'swagger.yaml'
+        }
+      ],
       sourceDir: 'source',
       buildDir: 'build',
       ...
