@@ -227,9 +227,9 @@ const config = {
       templateEngine: 'hbs',
       data: [
         {
-            name: 'swagger',
-            type: 'yaml',
-            file: 'swagger.yaml'
+          name: 'swagger',
+          type: 'yaml',
+          file: 'swagger.yaml'
         }
       ],
       sourceDir: 'source',
