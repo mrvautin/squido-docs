@@ -219,23 +219,23 @@ A full example below:
 ``` javascript
 const config = {
   development: {
-      name: 'squido',
-      description: 'This is the blog description',
-      twitterHandle: '@mrvautin',
-      baseUrl: 'http://localhost:4965',
-      sourcesExt: 'markdown',
-      templateEngine: 'hbs',
-      data: [
-        {
-          name: 'swagger',
-          type: 'yaml',
-          file: 'swagger.yaml'
-        }
-      ],
-      sourceDir: 'source',
-      buildDir: 'build',
-      ...
-    }
+    name: 'squido',
+    description: 'This is the blog description',
+    twitterHandle: '@mrvautin',
+    baseUrl: 'http://localhost:4965',
+    sourcesExt: 'markdown',
+    templateEngine: 'hbs',
+    data: [
+      {
+        name: 'swagger',
+        type: 'yaml',
+        file: 'swagger.yaml'
+      }
+    ],
+    sourceDir: 'source',
+    buildDir: 'build',
+    ...
+  }
 }
 ```
 
