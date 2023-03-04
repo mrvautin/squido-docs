@@ -28,6 +28,10 @@ document.addEventListener('DOMContentLoaded', function () {
         tokenize: 'full',
         worker: 4
       }, function(results){
+        console.log('results', results);
+        if(results.length === 0){
+          searchResults.innerHTML = "<a class='list-group-item search-result-item' href='#'>No results found</a>";
+        }
         // Display results
         var resultCount = 0;
         results.forEach(function (result) {
