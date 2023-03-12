@@ -29,7 +29,7 @@ const config = {
         description: 'Squido documentation - A dead-simple Node.js static HTML website generator for super fast static websites which are easier to develop, more secure and dirt cheap to host.',
         twitterHandle: '@squido_app',
         facebookApp: '1492953114375539',
-        baseUrl: 'https://docs.squido.org',
+        baseUrl: 'https://squido-docs.markmoffat.com',
         sourcesExt: 'markdown',
         layout: 'layout.hbs',
         sourceDir: 'source',
