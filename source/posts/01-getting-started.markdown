@@ -170,7 +170,7 @@ Setup the [deploy/hosting](https://squido-docs.markmoffat.com/deployment-and-hos
 
 ## Demos
 
-Blog style: [https://blog.squido.org](https://blog.squido.org)
+Blog style: [https://squido-blog.markmoffat.com](https://squido-blog.markmoffat.com)
 
 Documentation style: This website
 
