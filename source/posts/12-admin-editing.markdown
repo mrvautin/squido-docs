@@ -9,7 +9,7 @@ tags:
   - cms
 ---
 
-The `squido` admin panel is accessible after running the [serve](https://docs.squido.org/usage-commands/#serve-command). 
+The `squido` admin panel is accessible after running the [serve](https://squido-docs.markmoffat.com/usage-commands/#serve-command). 
 
 Running serve:
 

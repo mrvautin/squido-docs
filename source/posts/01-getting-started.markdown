@@ -68,7 +68,7 @@ Enter your new `squido` website directory:
 $ cd my-squido-website
 ```
 
-Get started building your `squido` website [structure](https://docs.squido.org/structure/).
+Get started building your `squido` website [structure](https://squido-docs.markmoffat.com/structure/).
 
 ### Start from template
 
@@ -166,7 +166,7 @@ $ git commit -m "First commit"
 $ git push
 ```
 
-Setup the [deploy/hosting](https://docs.squido.org/deployment-and-hosting/).
+Setup the [deploy/hosting](https://squido-docs.markmoffat.com/deployment-and-hosting/).
 
 ## Demos
 

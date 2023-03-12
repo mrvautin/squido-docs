@@ -88,4 +88,4 @@ Table          | Contents
 All headings are automatically rendered as # anchors to hyperlink (skip) to sections within a page / post. This means you add the `/#heading-name` to the URL to automatically jump to that heading. 
 
 For example: 
-[https://docs.squido.org/markdown/#playground](https://docs.squido.org/markdown/#playground)
+[https://squido-docs.markmoffat.com/markdown/#playground](https://squido-docs.markmoffat.com/markdown/#playground)

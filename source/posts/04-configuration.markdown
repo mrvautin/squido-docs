@@ -70,7 +70,7 @@ Config                         | Usage
 `port`                  | The port used when running `squido serve`
 `pagination`            | This controls whether you want `squido` to paginate your posts
 `postPerPage`           | This controls how many posts appear per page
-`postBuild`             | Controls any post build tasks you wish to run. See [here](https://docs.squido.org/post-build-tasks/)
+`postBuild`             | Controls any post build tasks you wish to run. See [here](https://squido-docs.markmoffat.com/post-build-tasks/)
 
 {.table .table-bordered}
 
