@@ -26,6 +26,8 @@ tags:
 ---
 ```
 
+Required fields are: 'title', 'permalink', 'description' and 'date' {.text-danger .fs-5}
+
 You can add any data values your like but the example layouts uses the `title` and `description` for SEO for page title. 
 
 New meta data values can be access in the layouts using `{{meta.<new value>}}`.
