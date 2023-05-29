@@ -174,4 +174,4 @@ Blog style: [https://squido-blog.markmoffat.com](https://squido-blog.markmoffat.
 
 Documentation style: This website
 
-Traditional website: [https://squido.org](https://squido.org)
+Traditional website: [https://squido.markmoffat.com](https://squido.markmoffat.com)
